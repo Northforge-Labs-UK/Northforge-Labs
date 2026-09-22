@@ -26,7 +26,12 @@ if (navToggle && siteNav) {
     syncNavState();
   });
 
-  mobileNavQuery.addEventListener("change", syncNavState);
+  if (typeof mobileNavQuery.addEventListener === "function") {
+    mobileNavQuery.addEventListener("change", syncNavState);
+  } else if (typeof mobileNavQuery.addListener === "function") {
+    mobileNavQuery.addListener(syncNavState);
+  }
+
   syncNavState();
 }
 
