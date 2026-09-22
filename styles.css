@@ -314,14 +314,17 @@ ul {
   }
 
   .site-nav {
-    display: none;
     width: 100%;
     flex-direction: column;
     align-items: flex-start;
     padding-top: 1rem;
   }
 
-  .site-nav.is-open {
+  .js .site-nav {
+    display: none;
+  }
+
+  .js .site-nav.is-open {
     display: flex;
   }
 
