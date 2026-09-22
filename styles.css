@@ -313,8 +313,7 @@ ul {
     padding-top: 1rem;
   }
 
-  .site-nav.is-open,
-  .site-nav-static {
+  .site-nav.is-open {
     display: flex;
   }
 
