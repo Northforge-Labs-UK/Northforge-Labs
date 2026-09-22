@@ -1,5 +1,3 @@
-document.body.classList.add("js");
-
 const navToggle = document.querySelector(".nav-toggle");
 const siteNav = document.querySelector(".site-nav");
 const currentYear = document.querySelectorAll("#current-year");
@@ -35,6 +33,7 @@ if (navToggle && siteNav && navToggle.dataset.navInitialized !== "true") {
     mobileNavQuery.addListener(syncNavState);
   }
 
+  document.body.classList.add("nav-ready");
   syncNavState();
 }
 
