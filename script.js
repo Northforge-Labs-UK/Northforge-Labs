@@ -35,6 +35,6 @@ if (navToggle && siteNav) {
   syncNavState();
 }
 
-currentYear.forEach((element) => {
+for (const element of currentYear) {
   element.textContent = new Date().getFullYear();
-});
+}

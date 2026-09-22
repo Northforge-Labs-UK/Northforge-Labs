@@ -46,8 +46,14 @@ img {
   top: 0;
   z-index: 10;
   border-bottom: 1px solid rgba(216, 222, 234, 0.8);
-  background: rgba(245, 247, 251, 0.92);
-  backdrop-filter: blur(14px);
+  background: var(--background);
+}
+
+@supports (backdrop-filter: blur(14px)) {
+  .site-header {
+    background: rgba(245, 247, 251, 0.92);
+    backdrop-filter: blur(14px);
+  }
 }
 
 .nav-wrap,
